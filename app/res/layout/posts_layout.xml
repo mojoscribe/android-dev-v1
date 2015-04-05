@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1" >
+
+    <include
+        android:id="@+id/includedAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/includedAction"
+        android:layout_margin="3dp"
+        android:background="@drawable/thin_rounded_corner_black_border_transparent_background"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/publishUnpublishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner_button_colored_background"
+            android:drawableLeft="@drawable/unpublish"
+            android:drawablePadding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Unpublish"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/publishDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="18sp"
+            android:layout_alignBaseline="@+id/publishUnpublishButton"
+            android:layout_alignBottom="@+id/publishUnpublishButton"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/publishUnpublishButton"
+            android:background="@drawable/rounded_corner_button_colored_background"
+            android:drawableLeft="@drawable/delete_icon"
+            android:drawablePadding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Delete"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/publishPostSortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="18sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_gray_background"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_down"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Sort By Credit Points"
+            android:textSize="12sp"
+            android:visibility="invisible" >
+        </Button>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/publishPostFeedGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1"
+        android:numColumns="2" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/postListNoList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_color_black"
+        android:textSize="12sp" />
+
+    <include
+        android:id="@+id/mainActivityArcMenu"
+        layout="@layout/arc_menu_layout" />
+
+</RelativeLayout>

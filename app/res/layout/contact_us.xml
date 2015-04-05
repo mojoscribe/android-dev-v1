@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <include
+        android:id="@+id/contactUsActionBar"
+        layout="@layout/action_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contactUsActionBar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/contactUsManditoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/mandatory" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactUsNameStringTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contactUsManditoryTextView"
+                android:layout_below="@+id/contactUsManditoryTextView"
+                android:layout_marginTop="15dp"
+                android:text="@string/yourname"
+                android:textColor="@color/text_color_black" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contactUsNameStringTextView"
+                android:layout_alignRight="@+id/contactUsManditoryTextView"
+                android:layout_below="@+id/contactUsNameStringTextView"
+                android:background="@drawable/thin_black_border_transparent_background"
+                android:padding="@dimen/thin_border_width" >
+
+                <EditText
+                    android:id="@+id/contactUsNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:nextFocusForward="@+id/contactUsEmailEditText"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#d3d3d3"
+                    android:textSize="15sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contactUsEmailStringTextView"
+                android:layout_alignRight="@+id/relativeLayout1"
+                android:layout_below="@+id/contactUsEmailStringTextView"
+                android:background="@drawable/thin_black_border_transparent_background"
+                android:padding="@dimen/thin_border_width" >
+
+                <EditText
+                    android:id="@+id/contactUsEmailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:nextFocusForward="@+id/contactUsPhoneEditText"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#d3d3d3"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/contactUsEmailStringTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/relativeLayout1"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_marginTop="14dp"
+                android:text="@string/youremail"
+                android:textColor="@color/text_color_black" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contactUsPhoneStringTextView"
+                android:layout_alignRight="@+id/RelativeLayout01"
+                android:layout_below="@+id/contactUsPhoneStringTextView"
+                android:background="@drawable/thin_black_border_transparent_background"
+                android:padding="@dimen/thin_border_width" >
+
+                <EditText
+                    android:id="@+id/contactUsPhoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:nextFocusForward="@+id/contactUsMessageEditText"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#d3d3d3"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/contactUsPhoneStringTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/RelativeLayout01"
+                android:layout_below="@+id/RelativeLayout01"
+                android:layout_marginTop="14dp"
+                android:text="@string/yourphone"
+                android:textColor="@color/text_color_black" />
+
+            <TextView
+                android:id="@+id/contactUsmessageStringTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/RelativeLayout02"
+                android:layout_below="@+id/RelativeLayout02"
+                android:layout_marginTop="14dp"
+                android:text="@string/message"
+                android:textColor="@color/text_color_black" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contactUsmessageStringTextView"
+                android:layout_alignRight="@+id/RelativeLayout02"
+                android:layout_below="@+id/contactUsmessageStringTextView"
+                android:background="@drawable/thin_black_border_transparent_background"
+                android:padding="@dimen/thin_border_width" >
+
+                <EditText
+                    android:id="@+id/contactUsMessageEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:minLines="3"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#d3d3d3"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/contactUsSendMessageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/RelativeLayout03"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="#DFDFDF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Send Message"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/text_color_black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

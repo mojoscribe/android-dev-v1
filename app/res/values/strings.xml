@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mojo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_bar_name"><b>Mojo</b>Scribe</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="login"><b>Login</b></string>
+    <string name="register"><b>Register</b></string>
+    <string name="forgotpassword"><u>Forgot Password?</u></string>
+    <string name="loginviafb"><b>Facebook</b></string>
+    <string name="loginviatw"><b>Twitter</b></string>
+    <string name="loginviago"><b>Google+</b></string>
+    <string name="regnewuser"><u>Register Now</u></string>
+    <string name="savetodraft">Save to Draft</string>
+    <string name="previouspost">Preview Post</string>
+    <string name="post">Post</string>
+    <string name="resentlyusedtag">Recently Used HashTags</string>
+    <string name="seperatetagusingspave">Seprate Tags Using Space (Max 10)</string>
+    <string name="selectimpact">Select Impact</string>
+    <string name="selectcategory">Select Category</string>
+    <string name="postdescription">Enter Post Descriprion (Max. 200 words)</string>
+    <string name="posttitle">Enter Post Title (Max. 30 words)</string>
+    <string name="picturepost">Make a Picture Post</string>
+    <string name="videopost">Make a Video Post</string>
+    <string name="menu">Menu</string>
+    <string name="mgoto">Go to</string>
+    <string name="shotbyne">This image/video was shot by me</string>
+    <string name="addmore">Add More</string>
+    <string name="delall">Delete All</string>
+    <string name="mandatory">Fields marked with * are mandatory.</string>
+    <string name="yourname"><b>Your Name *</b></string>
+    <string name="youremail"><b>Your Email *</b></string>
+    <string name="yourphone"><b>Your Phone</b></string>
+    <string name="message"><b>Message *</b></string>
+    <string name="question"><b>Question :</b></string>
+    <string name="option"><b>Options :</b></string>
+
+    <item name="isMockEnabled" type="bool">false</item>
+
+    <string name="fb_app_id">313714802133547</string>
+    <string name="login_with_facebook">Login with facebook</string>
+
+    <!-- <string name="server_url">http://1.1.1.7/mojo-scribe/api</string> -->
+    <string name="server_url">http://mojoscribe.com/api</string>
+
+    <string name="gcm_id">806052705501</string>
+    <string name="api_key">1a1fe74ec489daab22c209a73bf9d8c2</string>
+    <string name="AboutUs">http://mojoscribe.wordpress.com/</string>
+
+</resources>

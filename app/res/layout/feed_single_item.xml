@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thin_black_border_transparent_background" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/feedPostImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/black"
+                android:scaleType="fitCenter"
+                android:src="@drawable/background" />
+
+            <TextView
+                android:id="@+id/feedRatingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#20000000"
+                android:drawableLeft="@drawable/thermometer_icon"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/text_color_white" />
+            <ImageView 
+                android:id="@+id/feedVideoPreviewImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/video_icon"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/feedUserImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/feedTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/feedUserImageView"
+            android:layout_alignTop="@+id/feedUserImageView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/feedUserImageView"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/text_color_red"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/feedTitleTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#d3d3d3" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/feedViewsTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/views_icon"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#d3d3d3" />
+
+            <TextView
+                android:id="@+id/feedCommentsTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/comments_icon"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#d3d3d3" />
+
+            <TextView
+                android:id="@+id/feedImpactTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/bell_icon"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

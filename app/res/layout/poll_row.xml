@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+     
+    >
+
+    <TextView
+        android:id="@+id/pollsQuestionStringTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/question"
+        android:textColor="@color/text_color_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/pollsQuestionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pollsQuestionStringTextView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pollsQuestionStringTextView"
+        android:layout_marginTop="10dp"
+        android:text="ahasl dfsljsdfj sdfl;sdkfjsadjf asdflkhlas;dfk "
+        android:textColor="@color/text_color_black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pollsQuestionTextView"
+        android:layout_marginTop="10dp"
+       android:paddingBottom="10dp"
+        android:background="#DDDDDD"
+        >
+
+        <TextView
+            android:id="@+id/pollsOptionStringTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/option"
+            android:textColor="@color/text_color_black"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/pollRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pollsOptionStringTextView"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pollsOptionStringTextView"
+            
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <RadioButton
+                android:id="@+id/pollRadio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_radio_button"
+                android:checked="false"
+                android:tag="0"
+                android:text="RadioButton"
+                android:textColor="@color/text_color_black" />
+
+            <com.sudosaints.android.mojoscribe.view.HorizontalSeekBar
+                android:id="@+id/pollSeekBar0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:progressDrawable="@drawable/hr_seek_bar_progress"
+                android:thumb="@drawable/blank" />
+
+            <RadioButton
+                android:id="@+id/pollRadio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:button="@drawable/selector_radio_button"
+                android:checked="false"
+                android:tag="1"
+                android:text="RadioButton"
+                android:textColor="@color/text_color_black" />
+
+            <com.sudosaints.android.mojoscribe.view.HorizontalSeekBar
+                android:id="@+id/pollSeekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:progressDrawable="@drawable/hr_seek_bar_progress"
+                android:thumb="@drawable/blank" />
+            <RadioButton
+                android:id="@+id/pollRadio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:button="@drawable/selector_radio_button"
+                android:checked="false"
+                android:tag="2"
+                android:text="RadioButton"
+                android:textColor="@color/text_color_black" />
+
+            <com.sudosaints.android.mojoscribe.view.HorizontalSeekBar
+                android:id="@+id/pollSeekBar2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:progressDrawable="@drawable/hr_seek_bar_progress"
+                android:thumb="@drawable/blank" />
+
+            <RadioButton
+                android:id="@+id/pollRadio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:button="@drawable/selector_radio_button"
+                android:checked="false"
+                android:tag="3"
+                android:text="RadioButton"
+                android:textColor="@color/text_color_black" />
+
+            <com.sudosaints.android.mojoscribe.view.HorizontalSeekBar
+                android:id="@+id/pollSeekBar3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:progressDrawable="@drawable/hr_seek_bar_progress"
+                android:thumb="@drawable/blank" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/poolSubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pollsOptionStringTextView"
+            android:layout_below="@+id/pollRadioGroup"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner_button_white_background"
+            android:enabled="false"
+            android:padding="10dp"
+            android:text="Submit"
+            android:textSize="16sp" 
+            android:textColor="@color/text_color_black"/>
+
+       
+    </RelativeLayout>
+ <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relativeLayout1"
+            
+            android:background="#DC0000" />
+</RelativeLayout>

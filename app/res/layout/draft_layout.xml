@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1" >
+
+    <include
+        android:id="@+id/includedAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/includedAction"
+        android:layout_margin="3dp"
+        android:background="@drawable/thin_rounded_corner_black_border_transparent_background"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/draftPublishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner_button_colored_background"
+            android:drawableLeft="@drawable/publish_icon"
+            android:drawablePadding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Publish"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/draftDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="18sp"
+            android:layout_alignBaseline="@+id/draftPublishButton"
+            android:layout_alignBottom="@+id/draftPublishButton"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/draftPublishButton"
+            android:background="@drawable/rounded_corner_button_colored_background"
+            android:drawableLeft="@drawable/delete_icon"
+            android:drawablePadding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Delete"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/draftFeedGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1"
+        android:numColumns="2"
+        android:scrollbars="none" >
+    </GridView>
+<TextView
+        android:id="@+id/draftListNoList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_color_black"
+        android:textSize="12sp" />
+    <include
+        android:id="@+id/mainActivityArcMenu"
+        layout="@layout/arc_menu_layout" />
+
+</RelativeLayout>

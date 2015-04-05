@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white" >
+
+    <include
+        android:id="@+id/poolActionBar"
+        layout="@layout/action_bar" >
+    </include>
+
+    <ListView
+        android:id="@+id/pollsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/poolActionBar"
+        android:divider="@null"
+        android:padding="1dp"
+        android:cacheColorHint="#FFFFFF"
+        android:scrollbars="none" >
+    </ListView>
+
+    <include
+        android:id="@+id/mainActivityArcMenu"
+        layout="@layout/arc_menu_layout" />
+
+</RelativeLayout>

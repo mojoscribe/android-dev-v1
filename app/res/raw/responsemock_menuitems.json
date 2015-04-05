@@ -1,0 +1,31 @@
+{
+ "count": 24,
+ "next": null,
+ "previous": "http://54.201.141.250:8000/api/menu_items/?page=2",
+ "results": [
+  {
+   "id": 21,
+   "name": "zvczv",
+   "image": "hotel/IMG_20121221_174304.jpg",
+   "category": "zvzv"
+  },
+  {
+   "id": 22,
+   "name": "fhy",
+   "image": "hotel/photo.jpg",
+   "category": "Continental"
+  },
+  {
+   "id": 23,
+   "name": "fhy12",
+   "image": "hotel/photo_1.jpg",
+   "category": "Mexican"
+  },
+  {
+   "id": 24,
+   "name": "item with price",
+   "image": "",
+   "category": "Mexican"
+  }
+ ]
+}

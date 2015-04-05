@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FEFEFE" >
+
+    <include
+        android:id="@+id/includedAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+
+    <ScrollView
+        android:id="@+id/newsRoomScroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/includedAction"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/includedAction"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="#EfEfEf"
+                android:paddingBottom="10dp" >
+
+                <ImageView
+                    android:id="@+id/newsRoomRecentPostsImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitCenter"
+                    android:background="@color/text_color_black"
+                    android:src="@drawable/background" >
+                </ImageView>
+
+                <Button
+                    android:id="@+id/newsRoomAuthorSubscribeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/newsRoomRecentPostsImageView"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/left_rounded_corner_white_colored_background"
+                    android:drawableLeft="@drawable/circular_plus"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:text="Subscribe "
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <com.sudosaints.android.mojoscribe.view.CustomImageView
+                    android:id="@+id/newsRoomAuthorImageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignBottom="@+id/newsRoomAuthorSubscribeButton"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/newsRoomAuthorFullNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newsRoomRecentPostsImageView"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/newsRoomAuthorImageView"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/newsRoomAuthorLocationTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/newsRoomAuthorFullNameTextView"
+                    android:layout_below="@+id/newsRoomAuthorFullNameTextView"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/newsRoomAuthorImageView"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/newsRoomAboutAuthorNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="#CD0000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/newsRoomAboutAuthorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/newsRoomAboutAuthorNameTextView"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/newsRoomAboutAuthorNameTextView"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:textColor="#8d8d8d"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/newsRoomAboutAuthorTextView"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/newsRoomAboutAuthorTextView"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F3F3F3" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DC0000"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/newsRoomRepoterLevelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/newsRoomSubscribersTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/newsRoomMemberSinceTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_marginTop="10dp" >
+
+                <TabHost
+                    android:id="@+id/newsRoomTabHost"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                        </TabWidget>
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <com.sudosaints.android.mojoscribe.view.CustomGridView
+                                android:id="@+id/newsRoomGridView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#F1F1F1"
+                                android:numColumns="2"
+                                android:scrollbars="none" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </TabHost>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    
+
+</RelativeLayout>

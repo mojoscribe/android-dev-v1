@@ -1,0 +1,210 @@
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F1F1F1" >
+
+    <include
+        android:id="@+id/includedAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/includedAction"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F6F6F6" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/singleFeedImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:background="@android:color/black"
+                    android:scaleType="fitCenter"
+                     />
+
+                <ImageView
+                    android:id="@+id/singleFeedPlayImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/video_icon"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/singleFeedRatingtextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="0dp"
+                    android:background="#30000000"
+                    android:drawableLeft="@drawable/thermometer_icon"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="0.0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/singleFeedShareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_below="@+id/singleFeedTitleTextView"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corner_red_button_white_background"
+                android:drawableLeft="@drawable/share_icon"
+                android:drawablePadding="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="8dp"
+                android:text="Share"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/text_color_red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/singleFeedDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/singleFeedShareButton"
+                android:layout_alignRight="@+id/singleFeedTitleTextView"
+                android:layout_below="@+id/singleFeedShareButton"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="@color/text_color_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/singleFeedHashTagsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/singleFeedDescriptionTextView"
+                android:layout_alignRight="@+id/singleFeedTitleTextView"
+                android:layout_below="@+id/singleFeedDescriptionTextView"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="#CD0000"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/singleFeedHashTagsTextView"
+                android:layout_alignRight="@+id/singleFeedTitleTextView"
+                android:layout_below="@+id/singleFeedHashTagsTextView"
+                android:layout_marginTop="20dp"
+                android:background="#d3d3d3" >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/singleFeedViewsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/views_icon"
+                    android:drawablePadding="5dp"
+                    android:text=" Views"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3" />
+
+                <TextView
+                    android:id="@+id/singleFeedCommentsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/comments_icon"
+                    android:drawablePadding="5dp"
+                    android:text=" Shares"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3" />
+
+                <TextView
+                    android:id="@+id/singleFeedImpactTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/bell_icon"
+                    android:drawablePadding="5dp"
+                    android:text=" Impact"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/singleFeedAuthorImageView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout1"
+                 />
+
+            <TextView
+                android:id="@+id/singleFeedTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/singleFeedAuthorImageView1"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/singleFeedAuthorImageView1"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/singleFeedAuthorImageView1"
+                android:textColor="#CD0000"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

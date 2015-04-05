@@ -1,0 +1,92 @@
+app/proguard-project.txt
+app/project.properties
+# built application files
+
+*.apk
+
+*.ap_
+
+# files for the dex VM
+
+*.dex
+
+# Java class files
+
+*.class
+
+# generated files
+
+bin/
+
+app/gen/*
+
+.apt_generated/
+
+src/.apt_generated/*
+
+src/.apt_generated/
+
+# Local configuration file (sdk path, etc)
+
+local.properties
+
+.DS_Store
+
+#Eclipse project files
+
+*.pydevproject
+
+.project
+
+.metadata
+
+bin/**
+*/bin/**
+
+tmp/**
+
+tmp/**/*
+
+*.tmp
+
+*.bak
+
+local.properties
+
+.classpath
+
+.settings/
+
+.loadpath
+
+# External tool builders
+
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+
+*.launch
+
+# CDT-specific
+
+.cproject
+
+# PDT-specific
+
+.buildpath
+
+#IntelliJ
+
+*.iml
+
+*.ipr
+
+*.iws
+
+.idea/
+
+#android-studio
+
+gradlew
+
+gradlew.bat

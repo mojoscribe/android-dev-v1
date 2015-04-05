@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1" >
+
+    <include
+        android:id="@+id/includedAction123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/action_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/includedAction123" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/dasahBoardImageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/includedAction123"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:background="@color/text_color_black"
+                android:src="@drawable/background" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/dasahBoardImageView"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/white_transparent_background" >
+
+                <TextView
+                    android:id="@+id/dashboardRatingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/red_thermometer_icon"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#CD0000" />
+
+                <ImageButton
+                    android:id="@+id/dashboardWatchLaterImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/post_pin" />
+
+                <TextView
+                    android:id="@+id/dashboardHeadlineTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/dashboardWatchLaterImageButton"
+                    android:layout_toRightOf="@+id/dashboardRatingTextView"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/dashboardVirticalLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dasahBoardImageView"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/mainActivityArcMenu"
+        layout="@layout/arc_menu_layout" />
+
+</RelativeLayout>

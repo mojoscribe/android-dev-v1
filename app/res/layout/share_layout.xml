@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/shareViaFacebookRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5589C2"
+        android:padding="@dimen/thin_border_width" >
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#4A7FB5"
+            android:padding="10dp"
+            android:src="@drawable/fb_icon" />
+
+        <TextView
+            android:id="@+id/loginFbEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ImageView01"
+            android:background="@android:color/transparent"
+            android:hint="@string/loginviafb"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/loginFbEditText"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/right_btn_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shareTwitterLoginRelativeLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#51A5E5"
+        android:padding="@dimen/thin_border_width" >
+
+        <ImageView
+            android:id="@+id/ImageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#479BD9"
+            android:padding="10dp"
+            android:src="@drawable/tw_icon" />
+
+        <TextView
+            android:id="@+id/loginTwTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ImageView3"
+            android:background="@android:color/transparent"
+            android:hint="@string/loginviatw"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/loginTwTextView"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/right_btn_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shareGPlusLoginRelativeLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D94E37"
+        android:padding="@dimen/thin_border_width" >
+
+        <ImageView
+            android:id="@+id/ImageView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#CD452D"
+            android:padding="10dp"
+            android:src="@drawable/gplus_icon" />
+
+        <TextView
+            android:id="@+id/loginGpTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ImageView03"
+            android:background="@android:color/transparent"
+            android:hint="@string/loginviago"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/loginGpTextView"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/right_btn_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

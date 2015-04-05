@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1f1f1" >
+
+    <TextView
+        android:id="@+id/horizantalFeedListCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="Categories"
+        android:textColor="#CD0000"
+        android:textSize="15sp" />
+
+    <!-- <ImageButton
+        android:id="@+id/horizantalFeedListActionImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/horizantalFeedListCategoryTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/red_arrow_right" /> -->
+
+    <com.meetme.android.horizontallistview.HorizontalListView
+        android:id="@+id/feedHorizantalViewList"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_below="@+id/horizantalFeedListCategoryTextView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

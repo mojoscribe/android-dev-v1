@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40sp"
+    android:background="#CE0000" >
+
+    <RelativeLayout
+        android:id="@+id/actionBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/actionBarLeftImageView"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/action_bar_margin" />
+
+        <TextView
+            android:id="@+id/actionBarAppTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_toLeftOf="@+id/actionBarDoneTextView"
+            android:layout_toRightOf="@+id/actionBarLeftImageView"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/action_bar_margin"
+            android:text="@string/action_bar_name"
+            android:textColor="@color/text_color_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/actionBarDoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/action_bar_margin"
+            android:text="Done" 
+            android:textColor="@color/text_color_white"
+            android:textSize="15sp"
+            android:background="#10000000"/>
+
+       
+    </RelativeLayout>
+
+</RelativeLayout>

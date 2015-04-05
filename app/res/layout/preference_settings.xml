@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/text_color_white" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/categoriesStringTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="#F1F1F1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="Categories of News"
+                android:textColor="@color/text_color_black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.sudosaints.android.mojoscribe.view.CustomListView
+                android:id="@+id/prefSettingsCategoriesListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoriesStringTextView"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:divider="@null"
+                android:scrollbars="none" >
+            </com.sudosaints.android.mojoscribe.view.CustomListView>
+
+            <RelativeLayout
+                android:id="@+id/citysRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/prefSettingsCategoriesListView"
+                android:layout_marginTop="10dp"
+                android:background="#F1F1F1" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/prefSettingsAutoCompleteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter News Location"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" >
+
+                </AutoCompleteTextView>
+            </RelativeLayout>
+
+            <com.sudosaints.android.mojoscribe.view.FlowLayout
+                android:id="@+id/prefSettingsCitysFlowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/citysRelativeLayout"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp" >
+            </com.sudosaints.android.mojoscribe.view.FlowLayout>
+
+            <TextView
+                android:id="@+id/NotificationSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prefSettingsCitysFlowLayout"
+                android:background="#F1F1F1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="Notification Setting"
+                android:textColor="@color/text_color_black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/prefsettingsMobileNotificationCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/NotificationSetting"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:button="@drawable/selector_check_box_button"
+                android:text="  Mobile Notification"
+                android:textColor="@color/text_color_black"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/prefSettingsEmailNotificationCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/prefsettingsMobileNotificationCheckBox"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:button="@drawable/selector_check_box_button"
+                android:text="  Email Notification"
+                android:textColor="@color/text_color_black"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/emailRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/prefSettingsEmailNotificationCheckBox"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/prefSettingsEmailtextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:padding="10dp"
+                    android:text=" @gmail.com" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/saveLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/emailRelativeLayout"
+                android:layout_marginTop="10dp"
+                android:background="#F1F1F1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/prefSettingsResetTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/thin_black_border_transparent_background"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Reset Information"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/prefSettingsSaveTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/thin_black_border_transparent_background"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Save Information"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

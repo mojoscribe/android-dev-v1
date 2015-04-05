@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/include1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/progressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="8.0"
+            android:padding="5dp"
+            android:background="#30000000"
+            android:textColor="@color/text_color_red"
+            android:textStyle="bold" 
+            android:visibility="invisible"/>
+
+        <com.sudosaints.android.mojoscribe.view.VerticalSeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/imageView1"
+            android:layout_below="@+id/progressTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginTop="15dp"
+            android:progressDrawable="@drawable/seek_bar_progress"
+            android:thumb="@drawable/blank" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/red_arrow" />
+    </RelativeLayout>
+
+</RelativeLayout>

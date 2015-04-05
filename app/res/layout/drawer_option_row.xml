@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <LinearLayout
+         android:id="@+id/OptionLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+         <Button
+             android:id="@+id/drawerOptionButton"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:background="@android:color/transparent"
+             android:drawableLeft="@drawable/upload_icon"
+             android:drawablePadding="15dp"
+             android:text="Upload"
+             android:textColor="#FFFFFF"
+             android:padding="10dp"
+             android:gravity="left"
+             android:textSize="16sp" />
+     </LinearLayout>
+    
+
+</RelativeLayout>

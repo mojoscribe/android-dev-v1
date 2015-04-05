@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/text_color_white">
+
+    <include
+        android:id="@+id/imageSelActionBar"
+        layout="@layout/action_bar_second" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/imageSelAddMoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="#DFDFDF"
+            android:gravity="center"
+            android:hint="@string/addmore"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#8D8D8D"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/imageSelDelAllTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="#DFDFDF"
+            android:gravity="center"
+            android:hint="@string/delall"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#8D8D8D"
+            android:textSize="15sp" />
+
+       
+    </LinearLayout>
+
+   <GridView
+       android:id="@+id/imageSelGridView"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_above="@+id/linearLayout1"
+       android:layout_alignParentRight="true"
+       android:layout_below="@+id/imageSelActionBar"
+       android:columnWidth="85dp"
+       android:gravity="center"
+       android:horizontalSpacing="2dp"
+       android:numColumns="auto_fit"
+       android:stretchMode="columnWidth"
+       android:verticalSpacing="2dp" />
+
+</RelativeLayout>

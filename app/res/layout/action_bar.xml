@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40sp"
+    android:background="#CE0000" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/actionSearchBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/actionSearchBarLeftImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/action_bar_margin"
+                android:src="@drawable/arrow_left" />
+
+            <ImageView
+                android:id="@+id/actionSearchBarSearchImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/action_bar_margin"
+                android:src="@drawable/search_icon" />
+
+            <EditText
+                android:id="@+id/actionSearchBarsearchQueryEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/actionSearchBarSearchImageView"
+                android:layout_toRightOf="@+id/actionSearchBarLeftImageView"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="Search query...."
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="#CCFFFFFF"
+                android:textSize="16sp" >
+                  
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/actionBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/actionBarLeftImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/action_bar_margin"
+                android:src="@drawable/left_drawers" />
+
+            <TextView
+                android:id="@+id/actionBarAppTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_toLeftOf="@+id/actionBarSecondImageView"
+                android:layout_toRightOf="@+id/actionBarLeftImageView"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/action_bar_margin"
+                android:text="@string/action_bar_name"
+                android:textColor="@color/text_color_white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/actionBarFourthImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/action_bar_margin"
+                android:src="@drawable/plus_icon" />
+
+            <ImageView
+                android:id="@+id/actionBarThirdImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignTop="@+id/actionBarFourthImageView"
+                android:layout_toLeftOf="@+id/actionBarFourthImageView"
+                android:padding="@dimen/action_bar_margin"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:id="@+id/actionBarSecondImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/actionBarThirdImageView"
+                android:padding="@dimen/action_bar_margin"
+                android:src="@drawable/user_icon" />
+
+          
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

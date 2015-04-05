@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/feedElementImageView"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/text_color_black"
+        android:src="@drawable/background" 
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/feedElementImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/feedElementImageView"
+        android:background="@drawable/white_transparent_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/feedElementTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="100dp"
+            android:padding="5dp"
+            android:text="Hello SudoSaints"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

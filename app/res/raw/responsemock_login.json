@@ -1,0 +1,134 @@
+{
+ "id": 1,
+ "username": "grappus",
+ "email": "dharmanshu@grappus.com",
+ "type": "CLIENT",
+ "first_name": "",
+ "menu_items": [
+  {
+   "id": 1,
+   "name": "Sam",
+   "image": "",
+   "category": ""
+  },
+  {
+   "id": 2,
+   "name": "Sam",
+   "image": "",
+   "category": ""
+  },
+  {
+   "id": 3,
+   "name": "Sam",
+   "image": "",
+   "category": "Snacks"
+  },
+  {
+   "id": 4,
+   "name": "dummy",
+   "image": "http://www.bcmtouring.com/forum/attachments/titardsc_8277.jpg-151345d1300462943",
+   "category": "Chinese"
+  },
+  {
+   "id": 5,
+   "name": "Sam",
+   "image": "",
+   "category": "Snacks"
+  },
+  {
+   "id": 6,
+   "name": "Sam",
+   "image": "",
+   "category": ""
+  },
+  {
+   "id": 11,
+   "name": "Sam",
+   "image": "",
+   "category": ""
+  },
+  {
+   "id": 12,
+   "name": "Sample2",
+   "image": "",
+   "category": "Chinese"
+  },
+  {
+   "id": 13,
+   "name": "Sample 3",
+   "image": "",
+   "category": "Continental"
+  },
+  {
+   "id": 14,
+   "name": "dummy item",
+   "image": "",
+   "category": "Mexican"
+  },
+  {
+   "id": 15,
+   "name": "Sample 7",
+   "image": "",
+   "category": "Chinese"
+  },
+  {
+   "id": 16,
+   "name": "Sample dummy",
+   "image": "",
+   "category": "Chinese"
+  },
+  {
+   "id": 17,
+   "name": "Sample dummy 3",
+   "image": "",
+   "category": "Chinese"
+  },
+  {
+   "id": 18,
+   "name": "sending Image",
+   "image": "",
+   "category": "American"
+  },
+  {
+   "id": 19,
+   "name": "sending image test",
+   "image": "",
+   "category": "Mexican"
+  },
+  {
+   "id": 20,
+   "name": "gftfu",
+   "image": "",
+   "category": "Mexican"
+  },
+  {
+   "id": 21,
+   "name": "zvczv",
+   "image": "hotel/IMG_20121221_174304.jpg",
+   "category": "zvzv"
+  },
+  {
+   "id": 22,
+   "name": "fhy",
+   "image": "hotel/photo.jpg",
+   "category": "Continental"
+  },
+  {
+   "id": 23,
+   "name": "fhy12",
+   "image": "hotel/photo_1.jpg",
+   "category": "Mexican"
+  },
+  {
+   "id": 24,
+   "name": "item with price",
+   "image": "",
+   "category": "Mexican"
+  }
+ ],
+ "password": "pbkdf2_sha256$10000$jKOGPmr3pqww$jVwZL9HhGsVbUn8NW2rEibMWHynCPQgm5nkof5mh+eg=",
+ "last_name": "",
+ "lat": 20,
+ "lon": 20,
+ "auth_token": "b5a70d0a-f355-44be-89c5-9da4def7c991"
+}

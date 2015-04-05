@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sudosaints.android.mojoscribe"
+    android:id="@+id/LoginPrfileRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#C20000"
+    android:paddingBottom="15dp" >
+
+    <com.makeramen.RoundedImageView
+        android:id="@+id/leftDrawerProfileImageRoundedImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        app:corner_radius="30dp"
+        android:background="@color/text_color_white"
+        app:is_oval="true" />
+
+    <TextView
+        android:id="@+id/leftDrawerUserNameTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/leftDrawerProfileImageRoundedImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/leftDrawerProfileImageRoundedImage"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:text=""
+        android:textColor="@color/text_color_white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/leftDrawerDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/leftDrawerUserNameTextView"
+        android:layout_below="@+id/leftDrawerUserNameTextView"
+        android:text=""
+        android:textColor="@color/text_color_white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

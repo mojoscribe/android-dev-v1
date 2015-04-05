@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+     <LinearLayout
+         android:id="@+id/uploadLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:background="@drawable/drawer_button_odd_background"
+         android:orientation="vertical" >
+
+         <Button
+             android:id="@+id/newsRoombutton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:background="@android:color/transparent"
+             android:drawableLeft="@drawable/newsroom_user_icon"
+             android:drawablePadding="15dp"
+             android:text="Newsroom"
+             android:textColor="#FFFFFF" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/dashboardLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/uploadLayout"
+         
+         android:background="@drawable/drawer_button_even_background"
+         android:orientation="vertical" >
+
+         <Button
+             android:id="@+id/postsbutton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:background="@android:color/transparent"
+             android:drawableLeft="@drawable/posts_icon"
+             android:drawablePadding="15dp"
+             android:text="Posts"
+             android:textColor="#FFFFFF" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/homeLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+     android:layout_below="@+id/dashboardLayout"
+         android:background="@drawable/drawer_button_odd_background"
+         android:orientation="vertical" >
+
+         <Button
+             android:id="@+id/draftsButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:background="@android:color/transparent"
+             android:drawableLeft="@drawable/drafts_icon"
+             android:drawablePadding="15dp"
+             android:text="Drafts"
+             android:textColor="#FFFFFF" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/featuredLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:layout_below="@+id/homeLayout"
+         android:background="@drawable/drawer_button_even_background"
+         android:orientation="vertical" >
+
+         <Button
+             android:id="@+id/Button02"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:background="@android:color/transparent"
+             android:drawableLeft="@drawable/settings_icon"
+             android:drawablePadding="15dp"
+             android:text="Settings"
+             android:textColor="#FFFFFF" />
+     </LinearLayout>
+
+</RelativeLayout>

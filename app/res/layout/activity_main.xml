@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1" >
+
+    <include
+        android:id="@+id/includedAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+    
+        
+<com.markupartist.android.widget.PullToRefreshListView
+        android:id="@+id/feedsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/includedAction"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+    
+    <include android:id="@+id/mainActivityArcMenu"
+        layout="@layout/arc_menu_layout"
+        /> 
+
+    
+
+</RelativeLayout>

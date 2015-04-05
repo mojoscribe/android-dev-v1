@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_blue_color">#2AE6D5</color>
+    <color name="disabled_border_grey">#999999</color>
+    <color name="grey_color_bg">#F2F2F2</color>
+    <color name="disabled_text_grey_color">#AAAAAA</color>
+    <color name="darker_grey_color">#222222</color>
+    <color name="light_grey_color">#E2E2E2</color>
+    <color name="my_messages_top_container_silver_color">#EEEDEC</color>
+    <color name="my_messages_top_container_black_color">#444345</color>
+    <color name="light_red_color">#F14949</color>
+    <color name="header_dark_grey_color">#4E4A4A</color>
+    <color name="list_item_dark_grey_color">#5B5B5B</color>
+    <color name="list_item_separator_color">#E2E2E2</color>
+    <color name="view_message_image_bg">#282C30</color>
+    
+    
+    <color name="red_light">#ffff4444</color>
+    <color name="green_light">#ff99cc00</color>
+    <color name="orange_light">#ffffbb33</color>
+    <color name="blue_light">#ff33b5e5</color>
+
+</resources>

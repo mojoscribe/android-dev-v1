@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white" >
+
+    <include
+        android:id="@+id/aboutUsActionBAr"
+        layout="@layout/action_bar" >
+    </include>
+
+    <TextView
+        android:id="@+id/aboutUsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aboutUsActionBAr"
+        android:padding="30dp"
+        android:text="@string/AboutUs"
+        android:textColor="@color/text_color_black"
+        android:textSize="14sp" />
+
+    <include
+        android:id="@+id/mainActivityArcMenu"
+        layout="@layout/arc_menu_layout" />
+
+</RelativeLayout>
